@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .gradient-background {
     position: relative;
     min-height: 100vh;
@@ -43,3 +44,50 @@ footer {
   bottom: 0;
   text-align: center;
 }
+=======
+.gradient-background {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #5de0e6, #004aad, #002466);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite; /* mais rápido */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 92px;
+    margin: 0;
+}
+
+p {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: medium;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-family: Open Sans, sans-serif;
+    font-size: 92px;
+    margin: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #004aad; /* cor do footer */
+  padding: 20px 0;
+  position: relative; /* se quiser fixo use fixed */
+  bottom: 0;
+  text-align: center;
+}
+>>>>>>> ef3eb7bf5536be3276d2713f43a15706e44623fd
