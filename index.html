@@ -106,7 +106,15 @@ body {
   }
 
   .footer-nav {
-    gap:40px;
+    flex-direction: column; /* empilha os botões */
+    gap: 15px; /* espaço entre eles */
+    align-items: center; /* centraliza verticalmente */
+  }
+
+    .footer-nav button {
+    width: 70%;       /* largura proporcional à tela */
+    max-width: 200px; /* não ficar gigante em tablets grandes */
+    min-width: 150px; /* garante que o texto não quebre em telas pequenas */
   }
 
 
@@ -303,7 +311,7 @@ p { font-size: 20px; line-height: 1.6; max-width: 700px; }
     <nav class="footer-nav">
       <button onclick="window.open('https://www.linkedin.com/in/guilherme-a-b48437229','_blank')">LinkedIn</button>
       <button onclick="window.open('https://github.com/Guinvs','_blank')">GitHub</button>
-      <button onclick="window.location.href='mailto:guilherme.alvescorp@outlook.com'">E-mail</button>
+      <button onclick="window.location.href='mailto:guilherme.alvescorp@outlook.com'"> E-mail </button>
     </nav>
   </footer>
 
