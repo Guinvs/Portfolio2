@@ -10,6 +10,216 @@
 </head>
 <body class="gradient-background">
 
+  <style>/* ===================== */
+/* RESET E BODY */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* ===================== */
+/* FUNDO ANIMADO */
+/* ===================== */
+.gradient-background {
+  background: linear-gradient(90deg, #5de0e6, #004aad, #5de0e6);
+  background-size: 200% 100%;
+  animation: gradientFlow 6s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* ========================= */
+/* RESPONSIVO - TABLET */
+/* ========================= */
+@media (max-width: 900px) {
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro-icons img,
+  .skills-icons img,
+  .bio-icons img {
+    width: 80px;
+    gap:40px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVO - CELULAR */
+/* ========================= */
+@media (max-width: 600px) {
+  
+  
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+
+ .intro-icons img{
+  width:300vw;
+  max-width: 80px;
+  min-width: 50px;
+ }
+
+ .bio-icons img{
+   width:300vw;
+  max-width: 80px;
+  min-width: 50px;
+ }
+
+ .skills-icons img{
+  width:300vw;
+  max-width: 150px;
+  min-width: 100px;
+ }
+
+  section {
+    padding: 20px 10px;
+  }
+}
+
+
+  .profile-img {
+    width: 150px;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 10px;
+  }
+
+/* ===================== */
+/* SEÇÕES */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 { font-size: 56px; margin-bottom: 20px; }
+h2 { font-size: 36px; margin: 20px 0; }
+p { font-size: 20px; line-height: 1.6; max-width: 700px; }
+
+/* ===================== */
+/* INTRO */
+.intro-icons {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+.intro-icons img { width: 250px; }
+
+/* ===================== */
+/* BIO */
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 10%;
+  margin-top: 20px;
+  box-shadow: 0 0 0 3px #004aad;
+}
+
+.bio-icons {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+}
+
+.bio-icons img {
+  position: absolute;
+  width: 120px;
+}
+
+.PC-left { display: flex; justify-content: flex-start; }
+.PC-left img { width: 180px; }
+
+.PS-center { display: flex; justify-content: center; }
+.PS-center img { width: 180px; }
+
+.bio-icons-coffee {
+  display: flex;
+  justify-content: flex-end;
+}
+.bio-icons-coffee img { width: 180px; }
+
+/* ===================== */
+/* SKILLS */
+.skills { min-height: 100vh; }
+
+.skills-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.millos-right { right: 0; }
+.millos-right img { width: 180px; height: 200px; border-radius: 10%; }
+
+.ninja-left { left: 0; }
+.ninja-left img { width: 180px; }
+
+/* ===================== */
+/* PLAY */
+.play img { width: 100px; margin-bottom: 20px; }
+
+/* ===================== */
+/* FOOTER */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-nav button {
+  background-color: #5de0e6;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-nav button:hover {
+  background-color: #004aad;
+  color: #fff;
+  transform: scale(1.05);
+}</style>
+
   <!-- ===================== -->
   <!-- INTRO -->
   <!-- ===================== -->
